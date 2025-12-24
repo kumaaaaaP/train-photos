@@ -12,6 +12,34 @@
         .history-list { list-style: none; padding: 0; font-size: 0.85rem; }
         .history-list li { padding: 8px 0; border-bottom: 1px dashed #eee; display: flex; }
         .history-date { font-weight: bold; width: 120px; color: #666; }
+        /* 画像コンテナの親要素 */
+.photo-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0; /* 下部の隙間対策 */
+}
+
+/* 画像自体のスタイル（共通） */
+.photo-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 右下のキャプション */
+.photo-caption {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 4px 12px;
+    background: rgba(0, 0, 0, 0.5); /* 黒の半透明背景 */
+    color: #ffffff;
+    font-size: 0.7rem; /* かなり小さめの文字 */
+    letter-spacing: 0.02em;
+    pointer-events: none; /* テキスト選択を邪魔しない（任意） */
+    border-top-left-radius: 4px; /* 左上だけ少し丸く */
+}
     </style>
 </head>
 <body>
