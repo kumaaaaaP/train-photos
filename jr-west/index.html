@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>JR西日本 - 鉄道車両記録簿</title>
+    <style>
+        .company-header {
+            background: #fff; border: 1px solid var(--border-color);
+            padding: 20px; margin-bottom: 30px; display: flex; align-items: center;
+        }
+        .company-logo-area {
+            width: 80px; height: 80px; background: var(--jr-west-blue);
+            color: white; display: flex; align-items: center; justify-content: center;
+            font-weight: bold; font-size: 1.2rem; border-radius: 8px; margin-right: 20px;
+        }
+        .series-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="company-header">
+            <div class="company-logo-area">JR-W</div>
+            <div>
+                <h2 style="margin:0">JR西日本</h2>
+                <p style="margin:5px 0 0; font-size:0.8rem; color:#666;">西日本旅客鉄道株式会社 / アーバンネットワーク・近畿統括運行本部</p>
+            </div>
+        </div>
+
+        <div class="section-title">主要運用形式</div>
+        <div class="series-grid">
+            <div class="category-card">
+                <div class="card-header" style="border-top: 4px solid #0072bc;">近郊形電車</div>
+                <ul class="list-items">
+                    <li><a href="series-223.html">223系 <span>(1000/2000/6000番台)</span></a></li>
+                    <li><a href="#">225系 <span>(0/100/5000番台)</span></a></li>
+                    <li><a href="#">221系 <span>(リニューアル車)</span></a></li>
+                </ul>
+            </div>
+            <div class="category-card">
+                <div class="card-header" style="border-top: 4px solid #f29400;">通勤形電車</div>
+                <ul class="list-items">
+                    <li><a href="#">321系 <span>(D編成)</span></a></li>
+                    <li><a href="#">207系 <span>(F/T/S/H編成)</span></a></li>
+                    <li><a href="#">323系 <span>(大阪環状線)</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
