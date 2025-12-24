@@ -45,6 +45,33 @@
     pointer-events: none; /* テキスト選択を邪魔しない（任意） */
     border-top-left-radius: 4px; /* 左上だけ少し丸く */
 }
+        /* 戻るボタンのスタイル */
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #005bac; /* JR西日本風の青色 */
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.back-link:hover { text-decoration: underline; }
+
+/* 編成表のスタイル */
+.formation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    text-align: center;
+}
+.formation-table th, .formation-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+.formation-table th { background: #eee; }
+.formation-table .car-number { font-weight: bold; }
+
+    
     </style>
 </head>
 <body>
