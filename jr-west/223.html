@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>223系2000番台 - 鉄道車両記録簿</title>
+    <style>
+        .series-info { background: white; border: 1px solid var(--border-color); padding: 25px; margin-bottom: 30px; }
+        .spec-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-top: 15px; }
+        .spec-table th, .spec-table td { border: 1px solid #eee; padding: 10px; text-align: left; }
+        .spec-table th { background: #f9f9f9; width: 30%; }
+        .formation-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+        .formation-btn { 
+            background: #fff; border: 1px solid var(--border-color); padding: 10px; 
+            text-align: center; font-size: 0.8rem; font-weight: bold;
+        }
+        .formation-btn:hover { border-color: var(--jr-west-blue); color: var(--jr-west-blue); }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="series-info">
+            <span class="badge" style="background:var(--jr-west-blue)">JR西日本</span>
+            <h2 style="margin:10px 0">223系2000番台</h2>
+            <p style="font-size:0.9rem;">アーバンネットワークの新快速・快速列車の主力として活躍する形式。最高速度130km/hでの走行性能を持つ。</p>
+            
+            <table class="spec-table">
+                <tr><th>製造開始</th><td>1999年</td></tr>
+                <tr><th>主要運用</th><td>北陸本線、東海道・山陽本線（琵琶湖線・JR京都線・JR神戸線）、赤穂線</td></tr>
+                <tr><th>最高速度</th><td>130km/h</td></tr>
+            </table>
+        </div>
+
+        <div class="section-title">編成別記録 (網干総合車両所 本所)</div>
+        <h3 style="font-size:0.9rem; color:#666;">8両編成 (W編成)</h3>
+        <div class="formation-list">
+            <a href="train-w33.html" class="formation-btn">W31</a>
+            <a href="train-w33.html" class="formation-btn">W32</a>
+            <a href="train-w33.html" class="formation-btn" style="background:#eef6ff; border-color:var(--jr-west-blue);">W33</a>
+            <a href="train-w33.html" class="formation-btn">W34</a>
+        </div>
+    </main>
+</body>
+</html>
