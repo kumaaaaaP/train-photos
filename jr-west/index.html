@@ -2,6 +2,150 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鉄道車両記録簿 - Urban Network & Beyond</title>
+</head>
+<body>
+
+    <header>
+        <h1>鉄道車両記録簿</h1>
+        <p>JR西日本・アーバンネットワークから全国の鉄路へ</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">ホーム</a></li>
+            <li><a href="#">JR各社</a></li>
+            <li><a href="#">関西私鉄</a></li>
+            <li><a href="#">関東・地方私鉄</a></li>
+            <li><a href="#">機材・雑記</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- 画像ランダム表示エリア -->
+        <div class="hero">
+            <img id="hero-img" src="" alt="Featured Photo">
+            <div class="hero-label">
+                <span id="hero-company" class="badge">Loading...</span>
+                <strong id="hero-title">Featured Photo</strong>
+                <div id="hero-loc" style="font-size: 0.75rem; margin-top: 5px; opacity: 0.8;">---</div>
+            </div>
+        </div>
+
+        <div class="section-title">最近の追加車両 <span><a href="#" style="font-size: 0.75rem; color: #888;">一覧を見る</a></span></div>
+        <div class="recent-posts">
+            <div class="post-item">
+                <img src="https://images.unsplash.com/photo-1541427468627-a89a96e5ca1d?auto=format&fit=crop&q=80&w=400" alt="223系">
+                <span class="badge" style="background: var(--jr-west-blue);">JR西日本</span>
+                <h3>223系2000番台 W33編成</h3>
+                <p>2024.12.20 更新</p>
+            </div>
+            <div class="post-item">
+                <img src="https://images.unsplash.com/photo-1551667156-f63339076043?auto=format&fit=crop&q=80&w=400" alt="E235系">
+                <span class="badge" style="background: var(--color-jr-east);">JR東日本</span>
+                <h3>E235系1000番台 F-01編成</h3>
+                <p>2024.12.15 更新</p>
+            </div>
+            <div class="post-item">
+                <img src="https://images.unsplash.com/photo-1542640244-7e672d6cef21?auto=format&fit=crop&q=80&w=400" alt="阪急">
+                <span class="badge" style="background: var(--color-hankyu);">阪急電鉄</span>
+                <h3>1000系 1011F</h3>
+                <p>2024.12.10 更新</p>
+            </div>
+            <div class="post-item">
+                <img src="https://images.unsplash.com/photo-1532105956626-9569c03602f6?auto=format&fit=crop&q=80&w=400" alt="近鉄">
+                <span class="badge" style="background: var(--color-kintetsu);">近鉄</span>
+                <h3>80000系 "ひのとり"</h3>
+                <p>2024.12.05 更新</p>
+            </div>
+        </div>
+
+        <div class="category-grid">
+            <!-- JRグループ -->
+            <div class="category-card">
+                <div class="card-header">JRグループ</div>
+                <ul class="list-items">
+                    <li><a href="#">JR西日本：アーバンネットワーク <span>(142)</span></a></li>
+                    <li><a href="#">JR西日本：山陽・山陰エリア <span>(38)</span></a></li>
+                    <li><a href="#">JR東日本：首都圏エリア <span>(25)</span></a></li>
+                    <li><a href="#">JR九州 <span>(12)</span></a></li>
+                </ul>
+            </div>
+
+            <!-- 関西私鉄 -->
+            <div class="category-card">
+                <div class="card-header">関西私鉄</div>
+                <ul class="list-items">
+                    <li><a href="#">阪急電鉄 <span>(30)</span></a></li>
+                    <li><a href="#">阪神電気鉄道 <span>(18)</span></a></li>
+                    <li><a href="#">近畿日本鉄道 <span>(45)</span></a></li>
+                    <li><a href="#">南海電気鉄道 <span>(22)</span></a></li>
+                    <li><a href="#">京阪電気鉄道 <span>(15)</span></a></li>
+                </ul>
+            </div>
+
+            <!-- 地方私鉄・その他 -->
+            <div class="category-card">
+                <div class="card-header">地方私鉄・その他</div>
+                <ul class="list-items">
+                    <li><a href="#">秩父鉄道 <span>(8)</span></a></li>
+                    <li><a href="#">富山地方鉄道 <span>(12)</span></a></li>
+                    <li><a href="#">ことでん（高松琴平電気鉄道） <span>(10)</span></a></li>
+                    <li><a href="#">のと鉄道 <span>(5)</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const featuredData = [
+            {
+                url: "https://images.unsplash.com/photo-1541427468627-a89a96e5ca1d?auto=format&fit=crop&q=80&w=1200",
+                company: "JR西日本",
+                color: "#0072bc",
+                title: "223系2000番台 W33編成",
+                loc: "東海道本線 芦屋〜さくら夙川"
+            },
+            {
+                url: "https://images.unsplash.com/photo-1532105956626-9569c03602f6?auto=format&fit=crop&q=80&w=1200",
+                company: "JR東日本",
+                color: "#008000",
+                title: "E235系1000番台",
+                loc: "総武本線 物井〜佐倉"
+            },
+            {
+                url: "https://images.unsplash.com/photo-1542640244-7e672d6cef21?auto=format&fit=crop&q=80&w=1200",
+                company: "阪急電鉄",
+                color: "#800000",
+                title: "1000系 1011F",
+                loc: "阪急神戸線 御影〜岡本"
+            }
+        ];
+
+        function initHero() {
+            const selected = featuredData[Math.floor(Math.random() * featuredData.length)];
+            const img = document.getElementById('hero-img');
+            const badge = document.getElementById('hero-company');
+            
+            img.src = selected.url;
+            badge.textContent = selected.company;
+            badge.style.backgroundColor = selected.color;
+            document.getElementById('hero-title').textContent = selected.title;
+            document.getElementById('hero-loc').textContent = selected.loc;
+
+            img.onload = () => { img.style.opacity = '1'; };
+        }
+
+        window.addEventListener('DOMContentLoaded', initHero);
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
     <title>JR西日本 - 鉄道車両記録簿</title>
     <style>
         .company-header {
